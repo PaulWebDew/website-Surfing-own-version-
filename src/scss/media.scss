@@ -1,0 +1,302 @@
+@media screen and (min-aspect-ratio: 2/1){
+   .header-slider__locaion--title {
+      @include adaptive-font(80,35);
+}
+   .leftsubt{
+      @include adaptive-font(22,10);
+      margin-bottom: 1vh;
+}
+   .header-aside__nav svg {
+   width: 60%;
+   display: block;
+}
+   .item-airline{
+      top: 35vw;
+   }
+   .airplane{
+      top: 80vh;
+   }
+
+   .arrows-left{
+      top: 55vh;
+   }
+   .arrows-right{
+      top: 55vh;
+   }
+}
+
+@media screen and (min-aspect-ratio: 2.15/1){
+   .header-slider__locaion--title {
+      @include adaptive-font(60,25);
+}
+   .leftsubt{
+      @include adaptive-font(15,7);
+      margin-bottom: 1vh;
+}
+   .header-aside__nav svg {
+   width: 45%;
+   display: block;
+}
+   .item-airline{
+      top: 30vw;
+   }
+   .airplane{
+      top: 75vh;
+   }
+}
+
+@media screen and (max-aspect-ratio: 1.6/1){
+.header-slider__item-map svg{
+   height: auto;
+}
+
+.surf-slide{
+   margin-top: 100vh;
+}
+
+.surf-slide__item{
+  min-height: 65vh;
+}
+
+.shop-slider{
+   margin-top: 25vh;
+}
+.info-item.active .info-contents{
+   line-height: 1rem;
+}
+.item-airline{
+   top: 45vw;
+}
+}
+
+@media screen and (max-aspect-ratio: 1.3/1){
+   .header-aside{
+      width: 12vw;
+   }
+   .header-aside__logo img{
+      width: 12vw;
+   }
+
+   .travel{
+      padding-bottom: 0;
+   }
+   .arrowsBottom{
+      left: 14vw;
+   }
+   .item-airline{
+      top: 55vw;
+   }
+   .airplane{
+      top: 92vh;
+   }
+}
+
+@media screen and (max-aspect-ratio: 0.95/1){
+   .header-aside{
+      width: 18vw;
+   }
+   .header-aside__logo img{
+      width: 18vw;
+   }
+
+   .slider-arrows.slick-arrow{
+      width: 2.8vw;
+   }
+   .surf-slide{
+      margin-top: 80vh;
+   }
+   .surf-slide__item{
+      min-height: 55vh;
+    }
+    .sufr-map__slider-circle .surf-map__slider-info{
+      top: -20vh;
+    }
+    .header-slider__item-map svg{
+     width: 150vw;
+   }
+   .arrowsBottom{
+      left: 20vw;
+   }
+   .header-slider-dots{
+      width: 75vw;
+   }
+   .item-airline{
+      top: 80vw;
+   }
+   .airplane{
+      top: 100vh;
+   }
+   .item-image{
+      width: 95%  ;
+   }
+}
+
+@media screen and (width < 1200px){
+   .optionButton{
+      height: 1.3vw;
+      width: 1.3vw;
+      line-height: 1.3vw;
+   }
+   .info-item {
+      width: 1.3vw;
+      height: 1.3vw;
+   }
+   .item3 {
+      top: 83%;
+      left: 18%;
+  }
+  .slide-info__item button {
+   @include adaptive-font(50,20);
+   font-weight: 700;
+  }
+  .info-contents{
+   @include adaptive-font(18,9);
+  }
+}
+
+@media screen and (width < 950px) {
+   .arrows-right{
+      right: 4vw;
+   }
+   .surf .slider-arrows.arrows-right{
+      right: 4vw;
+   }
+   .item3 {
+      top: 75%;
+      left: 20%;
+  }
+  .header-slider-dots{
+   width: 78vw;
+}
+.section-title__shadTitle{
+   line-height: 6rem;
+}
+.options-item__1th, .options-item__2th{
+img{
+   width: 100%;
+}
+}
+}
+
+@media screen and (width < 600px){
+   .header-slider__locaion--title{
+      @include adaptive-font(80,35);
+   }
+   .header-slider-dots__item-number{
+      display: none;
+   }
+   .arrowsBottom{
+      svg{
+         width: 12px;
+      }
+   }
+   .sufr-map__slider-circle .surf-map__slider-info{
+      width: 30vw;
+   }
+   .sufr-map__slider-circle{
+      width: 2vw;
+      height: 2vw;
+   }
+   .drop {
+      border: 0.9vw solid transparent;
+      border-bottom: 2.2vw solid #4af6cd;
+  }
+  .item-image{
+   width: 100%;
+  }
+  .item-airline{
+   top: 70vw;
+  }
+  .slide-info {
+   width: 100%;
+   gap: 1vw;
+   margin-left: 5px;
+}
+.slide-info__item-title{
+   @include adaptive-font(30,10);
+   margin-left: 5px;
+}
+.info-item.active .info-contents {
+   line-height: 0.8rem;
+}
+}
+
+@media screen and (width < 450px) {
+   .btnMenu{
+      display: flex;
+   }
+   .header-aside{
+      transform: translateX(-100%);
+      transition: 0.3s;
+   }
+   .header-aside.visibl{
+      transform: translateX(0);
+   }
+   .btnMenu.visibl{
+      transform: translateX(17vw);
+   .menu{
+      opacity: 0;
+   }
+   .line1{
+      transform: rotate(45deg);
+      transform-origin: 50% 100%;
+      margin-top: 12px;
+   }
+   .line2{opacity: 0;}
+   .line3{
+      transform: rotate(-45deg);
+      transform-origin: 50% 0%;
+      margin-top: -12px;
+   }
+   }
+   .arrowsBottom{
+      left: 3vw;
+   }
+   .arrowsBottom.visibl{
+      left: 20vw;
+   }
+   .header-slider-dots {
+      width: 95%;
+   }
+   .header-slider-dots.visibl {
+      width: 75%;
+   }
+
+   .header-slider__item-map svg{
+      width: 200vw;
+   }
+   .section-title__shadTitle{
+      line-height: 5rem;
+   }
+   .header-slider__locaion--title {
+      @include adaptive-font(70,25);
+}
+   .surf-map{
+      display: none;
+   }
+   .surf-slide{
+      margin-top: 45vh;
+   }
+   .surf{
+      min-height: 110vh;
+   }
+   .item-airline{
+      top: 90vw;
+   }
+   .section-title__shadTitle{
+      @include adaptive-font(150,70);
+   }
+   .slider-arrows.slick-arrow{
+      width: 4vw;
+   }
+   .surf .slider-arrows.arrows-left,
+   .slider-arrows.arrows-left {
+      right: 15vw;
+   }
+   .surfbutton{
+      margin-left: 40%;
+   }
+   .header-aside__nav{
+      padding: 20% 0;
+   }
+}

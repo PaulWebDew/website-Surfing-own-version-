@@ -1,0 +1,124 @@
+<header>
+   <div class="btnMenu">
+      <div class="linesBtn">
+         <div class="line1"></div>
+         <div class="line2"></div>
+         <div class="line3"></div>
+      </div >
+      <div class="menu">Menu</div>
+   </div>
+   <div class="section-title__shadTitle animate__animated animate__fadeInRight">
+      <h3>go surf</h3>
+   </div>
+   <div class="header-slider">
+      <div id="slide1" class="header-slider__item item1" style="background-image: url('../img/headerBg.jpg');">
+         <div class="header-slider__item-map">
+            @@include('mapSvg.html')
+         </div>
+         <div class="header-slider__item-info">
+            <div class="header-slider__item-location animate__animated animate__fadeInLeft">
+               <div class="header-slider__item-locaion--subtitle leftsubt">Surf</div>
+               <div class="header-slider__locaion--title">North Shore</div>
+            </div>
+            <div class="header-slider__item-condition slider-title animate__animated animate__fadeInRight">
+               <div class="header-slider__condition--subtitle leftsubt">Condition</div>
+               <div class="header-slider__condition--title title">Radical</div>
+            </div >
+         </div >
+      </div >
+      <div id="slide2" class="header-slider__item item2" style="background-image: url('../img/surf-slide-2.jpg');">
+         <div class="header-slider__item-map">
+            @@include('mapSvg.html')
+         </div>
+         <div class="header-slider__item-info">
+            <div class="header-slider__item-location">
+               <div class="header-slider__item-locaion--subtitle leftsubt">Surf</div>
+               <div class="header-slider__locaion--title">South Shore</div>
+            </div>
+            <div class="header-slider__item-condition slider-title">
+               <div class="header-slider__condition--subtitle leftsubt">Condition</div>
+               <div class="header-slider__condition--title title">Radical</div>
+            </div >
+         </div >
+      </div >
+      <div id="slide3" class="header-slider__item item3" style="background-image: url('../img/surf-slide-3.jpg');">
+         <div class="header-slider__item-map">
+            @@include('mapSvg.html')
+         </div>
+         <div class="header-slider__item-info">
+            <div class="header-slider__item-location">
+               <div class="header-slider__item-locaion--subtitle leftsubt">Surf</div>
+               <div class="header-slider__locaion--title">West Shore</div>
+            </div>
+            <div class="header-slider__item-condition slider-title">
+               <div class="header-slider__condition--subtitle leftsubt">Condition</div>
+               <div class="header-slider__condition--title title">Radical</div>
+            </div >
+         </div >
+      </div >
+      <div id="slide4" class="header-slider__item item4" style="background-image: url('../img/surf-slide-4.jpg');">
+         <div class="header-slider__item-map">
+            @@include('mapSvg.html')
+         </div>
+         <div class="header-slider__item-info" >
+            <div class="header-slider__item-location">
+               <div class="header-slider__item-locaion--subtitle leftsubt">Surf</div>
+               <div class="header-slider__locaion--title">East Shore</div>
+            </div>
+            <div class="header-slider__item-condition slider-title">
+               <div class="header-slider__condition--subtitle leftsubt">Condition</div>
+               <div class="header-slider__condition--title title">Radical</div>
+            </div >
+         </div >
+      </div >
+   </div>
+   <div class="header-slider-dots">
+      <div id="dot1" class="header-slider-dots__item active animate__animated animate__fadeInDown animate__delay-1s">
+         <div class="header-slider-dots__item-number">01</div>
+         <div class="header-slider-dots__item-name">North Shore</div>
+      </div>
+      <div id="dot2" class="header-slider-dots__item animate__animated animate__fadeInDown animate__delay-2s">
+         <div class="header-slider-dots__item-number">02</div>
+         <div class="header-slider-dots__item-name">South Shore</div>
+      </div>
+      <div id="dot3" class="header-slider-dots__item animate__animated animate__fadeInDown animate__delay-3s">
+         <div class="header-slider-dots__item-number">03</div>
+         <div class="header-slider-dots__item-name">West Shore </div>
+      </div>
+      <div id="dot4" class="header-slider-dots__item animate__animated animate__fadeInDown animate__delay-4s">
+         <div class="header-slider-dots__item-number">04</div>
+         <div class="header-slider-dots__item-name">East Shore</div>
+      </div>
+   </div>
+   <div class="header-aside">
+         <div class="header-aside__logo">
+            <img src="@img/logo.png" alt="logo" >
+         </div>
+         <div class="header-aside__nav">
+            <div class="header-aside__nav-item" id="surf">
+               @@include('navico1Svg.html')
+               <p>Surf</p>
+            </div>
+            <div class="header-aside__nav-item" id="travel">
+               @@include('navico2Svg.html')
+               <p>Travel</p>
+            </div>
+            <div class="header-aside__nav-item" id="sleep">
+               @@include('navico3Svg.html')
+               <p>Sleep</p>
+            </div>
+            <div class="header-aside__nav-item" id="shop">
+               @@include('navico4Svg.html')
+               <p>Shop</p>
+            </div>
+         </div>
+         <div class="header-aside__date">
+            <div id="curDate" class="header-aside__date-title"></div>
+            <div class="header-aside__date-subtitle"><span id="curMonth"></span> | <span id="curYear"></span ></div>
+            <div class="header-aside__date-location">California</div>
+         </div>
+   </div>
+   <div class="arrowsBottom animate__animated animate__bounce animate__infinite animate__slow">
+      @@include('arrowsDownSvg.html')
+   </div>
+</header>

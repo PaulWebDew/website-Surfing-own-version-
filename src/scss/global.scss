@@ -1,0 +1,134 @@
+// ======================adaptive fontsize===================================
+$maxWidth: 1920;// - layout's max width
+// $pcSize - fotnt size from design for desctop
+// $mobSize -foxt size from design for mobile(320px)
+@mixin adaptive-font($pcSize, $mobSize){
+ $addSize: $pcSize - $mobSize;
+ $curWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize}*(100vw - 320px)/#{$curWidth});
+}
+
+// h1{
+//    font-weigt: 900;
+//    @include adaptive-font(40,24);
+// }
+
+// -----------------------------------------------------------------------------
+$green: #4AF6CD;
+:root {--animate-delay: 0.3s;}
+
+body{
+   height: 100%;
+   font-family: 'Fira Sans', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   background-color: #171919;
+   overflow-x: hidden;
+}
+
+.wrapper{
+   min-height: 100%;
+}
+
+.leftsubt{
+   display: inline-block;
+   @include adaptive-font(26,12);
+   opacity: .5;
+   padding-left: 7vw;
+   position: relative;
+   letter-spacing: 0.3rem;
+   margin-bottom: 2vh;
+   &::before{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      height: 1px;
+      width: 6vw;
+      background-color: #FFFFFF;
+      margin-right: 2vw;
+      margin-left: auto;
+   }
+}
+
+.rightsubt{
+   display: inline-block;
+   @include adaptive-font(26,12);
+   opacity: .5;
+   padding-right: 7vw;
+   position: relative;
+   letter-spacing: 0.3rem;
+   margin-bottom: 2vh;
+   &::after{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      content: '';
+      height: 1px;
+      width: 6vw;
+      background-color: #FFFFFF;
+      margin-left: 2vw;
+      margin-right: auto;
+   }
+}
+
+.title{
+   font-weight: 800;
+   @include adaptive-font(40,12);
+}
+
+.section-title__shadTitle{
+   position: absolute;
+   top: 0;
+   left: -4vw;
+   font-weight: 800;
+   @include adaptive-font(200,80);
+   line-height: 9rem;
+   z-index: 1;
+   width: 20vw;
+   h3{
+      opacity: 0.07;
+   }
+}
+
+.shop-button{
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   width: 10vw;
+   font-weight: 800;
+   @include adaptive-font(40,18);
+   &:active{
+      .visibl{
+         background-color: rgb($green, 0.5);
+         color: rgb(white, 0.5);
+      }
+      .transp{
+         color: rgb(white, 0.5);
+      }
+   }
+   .visibl{
+      position: relative;
+      background-color: $green;
+      display: flex;
+      justify-content: space-between;
+      gap: 1vw;
+      padding: 1vw;
+      &::after{
+         content: '';
+         width: 1vw;
+         height: 1px;
+         background-color: white;
+         position: absolute;
+         left: -0.5vw;
+         top: 50%;
+      }
+   }
+
+   .transp{
+      padding: 1vw;
+   }
+}
+
